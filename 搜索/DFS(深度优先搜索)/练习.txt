@@ -1,0 +1,11 @@
+http://acm.hdu.edu.cn/search.php?action=listproblem          素数环
+
+http://acm.hdu.edu.cn/showproblem.php?pid=1258      Sum It Up（去重技巧值得学习）---看下面的博客
+
+https://blog.csdn.net/weixin_44668898/article/details/104115884   （参考博客）
+
+
+https://ac.nowcoder.com/acm/contest/11179/B   牛牛嚯可乐
+
+
+https://codeforces.com/contest/1692/problem/F F. 3SUM

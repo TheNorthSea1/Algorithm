@@ -1,0 +1,68 @@
+https://codeforces.com/contest/1567/problem/B     B. MEXor Mixup（前缀和+  弄清异或（^）运算符的特性）
+
+https://codeforces.com/contest/1682/problem/B    B. AND Sorting
+{
+  中转
+}
+
+https://codeforces.com/contest/1573/problem/D   Xor of 3  (思维题--------值得思考)
+
+
+https://codeforces.com/contest/1592/problem/C   C. Bakry and Partitioning （求相同连通块     每个连通块的异或和为相同) ---注意对异或的理解
+{
+  思考：
+ 为什么如果存在奇数个连通块相同且异或和 为 总的异或和。---> 为OK?
+	
+   反证法：如果存在三个连通块相同，剩下的不相同，而 同2变0。。。。与原命题矛盾。
+}
+
+
+https://ac.nowcoder.com/acm/problem/17193       简单瞎搞题  (bitset  的应用)
+
+
+https://ac.nowcoder.com/acm/contest/30532/D     Setsuna的K数列 (理解二进制的本质)
+{
+
+  int a[31];                          //利用位运算进行二进制的转化
+  void change(int n){
+	for(int i =0;i<=30;i++){
+		  a[i] = ( (n>>i) & 1);
+	  }
+  }
+
+}
+
+https://ac.nowcoder.com/acm/problem/15979    小q的数列 
+{
+  f[0]=0 
+  f[1]=1
+  f[n]=f[n/2]+f[n%2]  (n>=2)
+  
+  其实本质就是:
+     while(n){
+       if(n&1) cnt++;
+       n>>=1;
+     }
+   求这个数二进制下，其中  1 的个数。  
+}
+
+https://ac.nowcoder.com/acm/contest/11179/A  牛牛吃米粒
+{
+
+  注意 long long 用 cin读会不对, 需要用 scanf读
+
+}
+
+
+https://codeforces.com/contest/1669/problem/H    H. Maximal AND
+{
+  贪心,进制
+}
+
+https://ac.nowcoder.com/acm/contest/34866/M  XOR Almost Everything
+
+
+https://www.acwing.com/problem/content/description/3591/ 排列与二进制
+{
+  模拟一下,就能得出 二进制运算下后面0的个数 == 十进制运算下后面0的个数
+}

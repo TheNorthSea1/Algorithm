@@ -1,0 +1,7 @@
+https://ac.nowcoder.com/acm/problem/51001    窗口滑动
+
+https://ac.nowcoder.com/acm/contest/33869/G
+{
+  1. 已知全部序列的前缀和, 求任意区间的前缀和 ？？？
+  2. 利用单调队列 , 求区间最小值
+}

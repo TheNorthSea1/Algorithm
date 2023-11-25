@@ -1,0 +1,105 @@
+https://ac.nowcoder.com/acm/problem/50437      题意：模拟哈希表-----（比较神奇的使用并查集）,还一种做法是利用set 二分
+{
+  1.类似并查集:
+
+  int x;
+
+  int p  = find(x%n);
+  a[p] = x;
+
+  重点： bin[p] = (p+1) % n; //此处的更新是下一个合适位置。
+  通过并查集从而不断的去找到更加合适的位置。
+
+  2.set 
+  先把0 ~ n-1 个数放入 set容器
+  然后,利用set自带的lower_bound 去找到合适的位置
+}
+
+https://codeforces.com/gym/102770/problem/I    I. Invoking the Magic(17浙江省赛) --- map离散化,并查集
+{
+  原题 的 a数据很大, n只有 1e5;
+  所有我们可以通过离散化
+
+  int cnt = 1;
+  map<int,int> mp;
+
+  int get(int x){
+    if(mp[x]) return mp[x];
+    else return mp[x] = cnt++;
+  }
+
+}
+
+https://codeforces.com/gym/103055/problem/G  Wall Game(18浙江省赛)
+{
+  利用map<Node,int> mp 将坐标转化为 单个数字
+
+  比如
+  struct Node{
+    int x,y;
+    friend bool operator<(Node a,Ndoe b){
+
+      if(a.x != b.x){          // 这里要注意 , 当用Node 作为key 时需要自己排序.
+                               // 两个变量都必须排, 不然 会一样
+        return a.x <= b.x; 
+      }else{
+        return a.y<b.y;
+      }
+
+    }
+  }
+
+
+  1.每次查询该点的六个方向,是否存在已经攻克的连通块。
+  2.对于计算,先进行合并, ans[i] + ans[j] - 2;
+  3.继续往四周搜寻其余5个方向,如果存在连通祖先是一样的， 那在去减去2;  (  画一下图就行 ) 
+
+
+}
+
+
+https://ac.nowcoder.com/acm/problem/237539  Triangles
+
+http://poj.org/problem?id=1988  Cube Stacking
+
+并查集+反集
+https://www.luogu.com.cn/problem/P1892  团伙
+{
+  敌人的敌人是朋友
+  1. x 和 y 是敌人
+  bin[find(x+n)] = find(y);
+  bin[find(y+n)] = find(x);
+  2. x 和 z 是敌人
+  bin[find(x+n)] = find(z);
+  bin[find(z+n)] = find(x);
+
+  这样就可以将 y 和 z 通过 x+n为中转, 进行合并了。
+  但还有一个需要注意的就是bin[x+n] = y,这样我们在查询n个人之中有几个团队:
+  for(int i = 1;i<=n;i++){
+    if(bin[i] == i) ans++;
+  }
+
+}
+
+http://218.108.89.20:18000/problem.php?cid=1449&pid=6 九转数据结构 (密码 week) ***
+{
+  并查集 + map
+}
+
+http://218.108.89.20:18000/problem.php?cid=1456&pid=6  ☀阳☀光☀开☀朗☀并☀查☀集☀
+{
+  http://t.csdnimg.cn/NcnRO
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+带权并查集  (   向量并查集   )
+
+https://blog.csdn.net/niushuai666/article/details/6981689 （食物链的题解---关系并查集）
+
+https://ac.nowcoder.com/acm/problem/107089     A Bug's Life  （利用异或的运算特点）
+
+https://ac.nowcoder.com/acm/problem/106585     B-Cube Stacking
+
+https://ac.nowcoder.com/acm/problem/16884     食物链（  两种做法  1. 开3 *n的数组  2.带权并查集  ）
+
+http://acm.hdu.edu.cn/showproblem.php?pid=3038   (hdu区间和矛盾问题)注意: 闭区间不能相加减,而（a , b]  之间可以相加减

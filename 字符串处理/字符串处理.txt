@@ -1,0 +1,28 @@
+https://ac.nowcoder.com/acm/problem/25125      牛客abc
+
+https://codeforces.com/contest/1553/problem/B    B. Reverse String    (2)---思维
+
+https://codeforces.com/contest/1551/problem/C    *C. Interesting Story    (思维比较巧妙) (1) --好题
+
+https://codeforces.com/contest/1560/problem/D    D.Make a Power of Two  (1)
+
+https://codeforces.com/contest/1536/problem/B     B. Prinzessin der Verurteilung (1) 
+
+https://www.luogu.com.cn/problem/P1019        单词接龙   (1)
+
+https://ac.nowcoder.com/acm/problem/114009   反片语 (1)
+
+https://codeforces.com/contest/1669/problem/D  D. Colorful Stamp(思维) 边界情况细节处理
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+   双指针 :
+
+https://codeforces.com/contest/1582/problem/C   Grandma Capa Knits a Scarf  （枚举） (1)
+https://ac.nowcoder.com/acm/problem/223449    最短串  (2)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+  子序列自动机：
+  用途：用于查询 b 字符串 是否是 a 的子序列 (注意区分 子串 和子序列 )
+
+https://ac.nowcoder.com/acm/problem/23053    月月查华华的手机   （模板题）

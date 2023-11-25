@@ -1,0 +1,1 @@
+https://ac.nowcoder.com/acm/contest/11216/D       绝望      （势能线段树， 欧拉筛，考察素数的知识）----坑死我了

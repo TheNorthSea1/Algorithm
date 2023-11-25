@@ -1,0 +1,6 @@
+
+链表操作：
+
+1.https://www.acwing.com/problem/content/27/  删除链表中重复的节点
+
+2.https://www.acwing.com/problem/content/33/ 反转链表 (递归、迭代)

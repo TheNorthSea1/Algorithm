@@ -1,0 +1,69 @@
+二维前缀和:
+https://ac.nowcoder.com/acm/problem/20032   激光炸弹
+{
+
+  G[x][y] 为二维前缀和
+
+  for(int i = 1;i<=X; i++){   //二维前缀和预处理
+    for(int j = 1;j<=Y; j++){
+
+      G[i][j] = G[i][j] + G[i-1][j] + G[i][j-1] - G[i-1][j-1];
+
+    }
+  }
+
+  如果要获得 以 (x1,y1) ,(x2,y2) 为对角线的矩形的区间值：
+
+  w = G[x2][y2] - G[x1][y2] - G[x2][y1] + G[x1][y1];
+
+}
+
+https://codeforces.com/contest/1674/problem/F  F. Desktop Rearrangement
+
+
+二维差分:
+https://ac.nowcoder.com/acm/contest/11224/E 牛牛的方格图
+
+
+------------------------------------------------------------------------------------------------
+https://codeforces.com/contest/1678/problem/C C. Tokitsukaze and Strange Inequality
+{
+  1.对数据进行预处理。
+
+    int pre[n+5][n+5];//pre[i][j] 表示1~j数中, 小于等于i的个数 
+		for(int i = 1;i<=n;i++){
+			for(int j = 1;j<=n;j++){
+				if(p[j] <= i) pre[i][j] = pre[i][j-1] + 1;
+				else pre[i][j] = pre[i][j-1];
+			}
+		}
+
+  2.用于组合数学的知识 ->   求出答案 
+
+
+}
+
+https://ac.nowcoder.com/acm/contest/33869/E
+{
+  1. 由于数据过大所以先要对数据进行离散化。
+  2. 离线差分
+}
+
+https://codeforces.com/contest/1692/problem/G  G. 2^Sort
+{
+  简单思维转化
+  
+}
+
+
+https://codeforces.com/contest/1700/problem/C   C. Helping the Nature***
+{
+  1.注意差分的特点
+
+  变成差分数组后。
+  1操作 b[i] 为 b[1]-1, b[i+1] +1.
+  2操作 b[i] 为 b[i]-1, b[n+1] + 1 (不在数组中了, 直接省略)
+  3操作 b[1] + 1, b[n+1] - 1
+
+
+}

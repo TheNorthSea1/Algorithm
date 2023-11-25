@@ -1,0 +1,53 @@
+https://ac.nowcoder.com/acm/contest/11216/D       绝望      （势能线段树， 欧拉筛，考察素数的知识）----坑死我了
+
+https://codeforces.com/contest/1566/problem/D1       D1. Seating Arrangements (easy version)  ---（树状数组和离散化）
+
+https://codeforces.com/problemset/problem/1579/E2     E2. Array Optimization by Deque   ------(需要看出是一个树状数组)
+
+https://codeforces.com/contest/1676/problem/H2    H2. Maximum Crossings 
+
+https://codeforces.com/contest/1679/problem/C   C. Rooks Defenders
+{
+  利用线段树 或者 线段树 求 区间和
+}
+
+
+https://ac.nowcoder.com/acm/problem/228989    冷静
+{
+  1.任何数 都可以由 多个质因数相乘得到。
+
+  2.利用 线性筛(欧拉筛) 获得每个数的最小质因数。
+
+  3. 多次查询的题目, 可以先全部读入 ,如果后面答案要按输入顺序输出的话,我们可以使用一个结构体.
+
+  struct Node{
+    int val;
+    int id;
+    friend bool operator<Node a,Node b>{
+      return a.id < b.id
+    }
+  }
+
+  但这题,用线段树超时了!
+}
+
+https://codeforces.com/gym/102770/problem/B B. Bin Packing Problem (17浙江省赛)
+{
+  1.第一种装箱方法:（从前往后找能容纳a[i] 的箱子）
+  利用线段树维护区间最大值,来寻找最先符合要求的容器。
+
+  2.第二种装箱方法：（先放剩余容积小的）
+  利用map 的 lower_bound() 方法, 注意 查找的是 mp -> frist 的值
+}
+
+
+L3-002 特殊堆栈 (30 point(s))
+{
+  1.树状数组, 二分
+  2.vector , insert , erase的使用
+}
+
+--------------------------------------------------------------------------------------------------------
+二维树状数组
+
+https://codeforces.com/contest/1674/problem/F F. Desktop Rearrangement

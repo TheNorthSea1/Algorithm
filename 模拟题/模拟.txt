@@ -1,0 +1,41 @@
+https://codeforces.com/contest/1579/problem/C  C. Ticks（题目整的花里胡哨-----考虑清楚就轻松AC）
+
+
+https://ac.nowcoder.com/acm/contest/11211/F dd爱框框  （双指针 || 队列）
+
+
+https://ac.nowcoder.com/acm/problem/234863    小猫排队
+
+https://ac.nowcoder.com/acm/problem/236123    Monster Tower
+
+https://www.acwing.com/problem/content/4276/ 链表模拟
+{
+  坑点:
+  注意结尾什么时候 -1 的情况。
+  比如 a链表为:
+  0100 4 0234
+  0234 5 -1
+
+  b链表为:
+  678 6 -1
+
+  结果为:
+  0100 4 0234
+  0234 5 678
+  678 6 -1
+
+}
+
+https://vjudge.net/contest/499751#problem/C 模拟四舍五入
+
+
+https://www.acwing.com/problem/content/755/ 平方矩阵I **
+{
+  1 1 1
+  1 2 1
+  1 1 1
+
+  1. 找规律
+  2.曼哈顿距离思想求解
+  3.蛇形矩阵思想求解
+}

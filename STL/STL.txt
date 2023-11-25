@@ -1,0 +1,81 @@
+https://ac.nowcoder.com/acm/contest/19850/L    指纹锁  (可以加条件----使set容器是否能插入东西)
+
+
+https://codeforces.com/contest/1679/problem/B B. Stone Age Problem
+{
+	map.clear() 函数 复杂度为 O(1)
+
+}
+
+
+https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652362   L2-039 清点代码库 (25 分)-----*
+{
+	map<vector<int> ,int> mp;
+
+	vector,也可以直接比价大小
+
+
+
+}
+
+
+https://codeforces.com/contest/1594/my     B. Special Numbers  （bitset的使用 然后还有一个知识点,第n个数转化为相应的进制    它们进制上存在的是一样的具体看题目）
+						          （快速幂取模）
+
+
+
+https://ac.nowcoder.com/acm/contest/11223/C    英语作文  ( map<string,queue> 的 使用)
+{
+
+	法一:
+	auto & w = mp["asd"];
+
+	学会 此处 & 的引用
+
+	法二:
+	利用map<string,int> mp // mp[s[i]]表示在当 k 范围内 s[i] 的数量
+
+	如何将 O(n^2) 的 复杂度降低
+
+}
+
+
+
+https://ac.nowcoder.com/acm/contest/30532/L    剪绳子 (set 的 lower_bound ,upper_bound 的使用)
+{
+
+	set<int> st;
+
+	st.insert(1); st.insert(2); st.insert(3);
+
+	auto t = st.find(2);
+
+	*t == 2;
+
+	这里我们就可以通过 t-- 使得 t指针指向 1   =>  *t 就变成了 1 
+
+}
+
+
+https://ac.nowcoder.com/acm/problem/50437      题意：模拟哈希表-----（比较神奇的使用并查集）,还一种做法是利用set 二分
+{
+  1.类似并查集:
+
+  int x;
+
+  int p  = find(x%n);
+  a[p] = x;
+
+  重点： bin[p] = (p+1) % n; //此处的更新是下一个合适位置。
+  通过并查集从而不断的去找到更加合适的位置。
+
+  2.set 
+  先把0 ~ n-1 个数放入 set容器
+  然后,利用set自带的lower_bound 去找到合适的位置
+}
+
+
+L3-002 特殊堆栈 (30 point(s))
+{
+	vector 中 insert , erase 的使用
+}

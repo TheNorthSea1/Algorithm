@@ -1,0 +1,11 @@
+https://codeforces.com/contest/1572/problem/A      A. Book  (使用set,而不用queue)----好题
+
+https://vjudge.net/problem/HDU-1285    确定比赛名次 
+
+https://codeforces.com/contest/1674/problem/G G. Remove Directed Edges
+{
+  
+  起始点的出度要 >= 2,并且 结束点的入度 >=2;
+
+  if(outd[p] >= 2 && ind[pos] >= 2) dp[pos] = max(dp[pos],dp[p]+1);
+}

@@ -1,0 +1,5 @@
+https://ac.nowcoder.com/acm/problem/207754  （组合数学+连通块）
+
+https://pintia.cn/problem-sets/994805046380707840/problems/994805063963230208   红色警报
+
+https://codeforces.com/contest/920/problem/E  E. Connected Components?

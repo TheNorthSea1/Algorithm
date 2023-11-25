@@ -1,0 +1,136 @@
+https://codeforces.com/contest/1559/problem/A   Mocha and Math
+
+https://ac.nowcoder.com/acm/problem/218870   *k小数查询 --（两种方法）  (1)
+
+https://codeforces.com/contest/1566/problem/D2   D2. Seating Arrangements (hard version)
+
+https://codeforces.com/contest/1573/problem/B   *B. Swaps(注意奇偶----巧妙利用数组---潜在的从小到大规律)--思路很妙
+
+https://codeforces.com/contest/1574/problem/B    B. Combinatorics Homework (观察。。)
+
+https://codeforces.com/contest/1553/problem/B    B. Reverse String    
+
+https://codeforces.com/contest/1556/problem/B  B. Take Your Places! (不难但要考虑清楚)
+
+https://codeforces.com/contest/1592/problem/B   B. Hemose Shopping
+
+https://codeforces.com/contest/1594/problem/C  C. Make Them Equal (数学的一点特性)
+
+https://codeforces.com/contest/1598/problem/B  B. Groups (当时sb用了个dfs--超时，     其实是枚举天数   ，然后进行数学分析  )
+
+https://ac.nowcoder.com/acm/contest/2927/B   数字游戏（博弈思维题）
+
+https://atcoder.jp/contests/arc138/tasks/arc138_a  A - Larger Score(swap交换)
+
+https://ac.nowcoder.com/acm/problem/235055    V字钩爪  (思维)
+{
+  1.分组
+  2.注意V型钩爪,只能抓 i%k一样的珠宝。
+  3.经过分组,就变成每组取相邻
+  这里就要注意分奇数和偶数：{
+
+    1.偶数 可以全部取完
+
+    2.奇数 有一个不能取, 但是有些位置的珠宝不可能不取 如  1234567  (其中的 2, 4, 6 不取是实现不了的)
+
+    换个思想就是不取的那个珠宝,要把剩下的两部分变成偶数个。
+
+  }
+
+}
+
+
+https://ac.nowcoder.com/acm/contest/11223/E   对决 (思维分析)
+{
+  1.先确定能否成为冠军
+  2.有个特列情况( 最强为: 4n + 2   第二强的人: 2n + 1 )    
+  3.判断最多能打败几人
+  4.注意 二分 优化
+
+
+}
+
+https://codeforces.com/contest/1660/problem/D   Maximum Product Strikes Back
+{
+  1. 以零为分界点。
+  2. a.负数偶数直接更新答案
+     b.负数奇数，{
+       找到第一个负数:{
+         设 t 为负数的位置。
+         [L,t-1],
+         [t+1,R]
+
+       }
+       找到最后一个负数:{
+        设 t 为负数的位置。
+        [L,t-1],
+        [t+1,R]
+       }
+     }
+  3. 题目中的 a{-2<= a <=2}.
+  4.所以区间的大小之和只和 abs(2) 的数量有关
+}
+
+https://zoj.pintia.cn/problem-sets/91827364500/problems/91827370062   Marjar Cola
+{
+  题意: 一个商店 可以用 x 个 瓶身 或者 y 个 瓶盖 换一瓶可乐,
+        问： 你现在手上 有 a 个 瓶身 , b 个 瓶盖 能换多少瓶可乐。
+
+  1.infinite 的 情况。
+  
+  (1).  x == 1 || y == 1
+
+  *(2).  (x == 2&&y == 2) && (a>1 || b>1) 这个情况容易被忽略 
+
+  2.有限的情况, 暴力就ok
+}
+
+https://ac.nowcoder.com/acm/problem/14367   String of CCPC (字符串思维)
+{
+  可能一次操作变成CCPC的最短串有:
+
+  CCC , CCP, CPC
+
+  但这些最短串可能镶嵌在CCPC中, 那么接下来进行分析:
+
+  1.CCC
+  CCCPC -> 显然不行
+  CCPCCC ->可以
+
+  处理方法:  当遇到CCC时要判断是不是CCCPC 的类型。 s.subtr(i+1,4) == "CCPC"
+
+  2.CCP
+
+  CCPC  -> 不行
+
+  处理方法: 遇到CCPC 就把i往前一个单位
+
+  3.CPC
+
+  CCPC -> 不行
+
+  处理方法: 遇到CCPC 就把i往前两个单位 
+
+  综上2,3 遇到CCPC 就把i往前两个单位
+
+}
+
+https://codeforces.com/contest/1674/problem/E E. Breaking the Wall(分类讨论) (1)
+
+
+https://codeforces.com/contest/1670/problem/B B. Dorms War
+
+
+https://codeforces.com/contest/1678/problem/B2 B2. Tokitsukaze and Good 01-String (hard version)
+{
+  1.数组长度是偶数
+  2.把每一段变成由多个00或者11组成
+  
+}
+
+https://codeforces.com/contest/1678/problem/C C. Tokitsukaze and Strange Inequality(**)
+{
+  以 O(n^2) 时间内预处理出来pre数组
+  利用pre[][] 数组进行预处理.
+  pre[i][j] 表示: 在 1~i 之间, 有几个数小于等于j 
+}

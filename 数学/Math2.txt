@@ -1,0 +1,41 @@
+数论分块
+
+https://ac.nowcoder.com/acm/contest/30532/K    取模
+{
+  知识点:
+  n % i  =>  n - floor(n/i) * i;
+
+  注意会爆 long long , 所以 使用 (__int128);
+
+}
+
+
+https://codeforces.com/gym/103055/problem/F  F. Fair Distribution (18 浙江省赛)
+{
+
+题意：
+给两个数 n 和 m, 有两种操作(每次只能选一种), n-- 或者 m++。问最小的操作次数使得 m%n == 0。
+
+1. n < m 的情况 (其他情况比较好理解就不说了)
+设n变成x, 那么m将变为 ceil(m/x) * x.
+
+m变化对答案的贡献值: ceil(m/x) * x - m;  => [floor( (m-1) /x) + 1] * x - m       (向上取整 => 向下取整)
+
+n变化对答案的贡献值: n - x;
+
+
+设 i {1<= i <= n}
+
+所以 ans = n - m + floor((m-1) / i) * i
+
+
+floor((m-1) / i) * i 利用整数分块求出他的最小值
+
+}
+
+https://ac.nowcoder.com/acm/contest/30896/A  区间最大值 ()
+
+
+
+
+

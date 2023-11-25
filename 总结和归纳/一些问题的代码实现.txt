@@ -1,0 +1,11 @@
+
+
+string a = "asdafaxacasdsvasas"  b = "ad";
+
+a 中 找 b的个数:
+
+1. 利用 substr函数
+
+for(int i = 0;i<a.size();i++){
+  if(a.substr(i,b.size()) == b) ans++;
+}

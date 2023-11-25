@@ -1,0 +1,194 @@
+https://blog.csdn.net/beihais/article/details/134511719 (兔兔煮鱼) 细节处理  (double/double)
+
+https://codeforces.com/contest/1561/problem/A     Simply Strange Sort  (题意有点难理解)
+
+https://ac.nowcoder.com/acm/contest/11214/A     （求小红受到的总伤害） 注意向上取整
+https://ac.nowcoder.com/acm/problem/200520       打 boss   （先算怪杀杀死玩家的回合数 -----       并且注意  怪杀打玩家   ，玩家打怪兽的先后顺序          ）
+
+https://ac.nowcoder.com/acm/contest/11214/B     擅长解密的小红同学 (概率论 + 组合数学)
+
+https://codeforces.com/contest/1538/problem/C   C. Number of Pairs (lowerbound 和 upperbound的使用)
+{
+  for(int i = 0;i < n ;i ++) {
+    int p1 = lower_bound(a + i + 1, a + n, L) - a;
+    int p2 = upper_bound(a + i + 1, a + n, R) - a;
+    sum += p2 - p1;
+  }
+}
+
+https://ac.nowcoder.com/acm/problem/235096   天气预报   和上面那道相似
+
+https://codeforces.com/contest/1598/problem/C   C. Delete Two Elements
+{
+
+  1.当时有个误区,认为sum/n 不是整数就为0 ，但这样是不对的 
+
+  2.可能 2 * sum/n 是一个整数
+  
+  4
+  0 1 6 7
+ 
+  3. 注意 结果为int时, 在其计算的过程中,可能会有double的。
+
+  4. 如何判断一个浮点数是整数:
+
+  double a = 23.0
+
+  a != (int) a
+
+}
+https://ac.nowcoder.com/acm/contest/33869/C 派蒙的奇妙冒险
+
+https://pintia.cn/problem-sets/994805046380707840/problems/994805084284633088   L1-046 整除光棍 (20 分)----考察（模拟手写除法运算的过程)）
+
+https://ac.nowcoder.com/acm/problem/14709       分解因数
+
+https://pintia.cn/problem-sets/994805046380707840/problems/994805138600869888       连续因子（弄清因子的概念）
+
+https://codeforces.com/contest/1593/problem/B    Make it Divisible by 25   （对25数字的理解--------）
+
+https://codeforces.com/contest/1582/problem/A     *A. Luntik and Concerts 
+{
+
+题意： 给你 a个1,b个2,c个3,分成两组,使他们的绝对值差 最小 ----输出这个差 (a,b,c 都大于等于1)
+
+心得： 【0,a + 2*b + 3*c】 中的任意数字，都可以表示出来   ==> a 个1 ,b 个2 ,c个 4 也可以都表示出来
+
+}
+
+
+
+https://ac.nowcoder.com/acm/problem/236116      Sum of Numerators
+
+https://ac.nowcoder.com/acm/contest/34442/C   攻城
+{
+  1.题目要求能否在最后一次全体攻击下,秒杀全部城堡。 这个时候能想到能否用整除的思想
+
+  2.设全体攻击次数为k:
+  总伤害为 n*k + 6*k 
+
+  sum 所有城堡的总生命值
+
+  3.所有要恰好第k次秒杀全部城堡, sum % (n + 6) == 0 ,  但还要注意最小生命值的那个城堡, 能否在最后一次全体攻击之前存活下来。
+
+  4. 特判 0 , 1
+}
+
+https://ac.nowcoder.com/acm/contest/34330/B  物流**
+{
+  1. 根据问题 转化为 一元一次的函数 y = kx + b;
+  2.根据 k 的正负号来 分类讨论
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. 进制之间的转化:
+https://pintia.cn/problem-sets/994805046380707840/problems/994805080346181632   L1-050 倒数第N个字符串 (15 分)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. 中位数相关问题：
+
+https://ac.nowcoder.com/acm/problem/17315    背包 (二分+优先队列维护)
+
+https://codeforces.com/contest/1520/problem/E   E. Arranging The Sheep(1)
+
+https://ac.nowcoder.com/acm/problem/50940   Running Median (经典求中位数)
+---法一：对顶堆
+---法二: 权值树状数组（还不会）
+---法三: 权值线段树（还不会）
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. 组合数学：
+
+相关公式:
+C(n,0) + C(n,1) + C(n,2) + ... + C(n,n) = 2^n;
+
+1 + 2^2 + 3^2 + …… + n^2 = n * (n + 1) * (2n + 1)/6;
+
+https://codeforces.com/contest/1669/problem/E  E. 2-Letter Strings
+{
+  ans = s[0] 相同的对数 + s[1] 相同的对数 - 2 * s[0] 和 s[1] 都相同的对数；
+}
+
+https://codeforces.com/contest/1598/problem/D    D. Training Session
+{
+  直接求符合要求的个数有点麻烦.
+   
+  总的个数 - 不符合要求的个数 = 符合要求的个数。
+
+  利用:
+
+  map<int,vector<int>> 
+  map<int,int> a
+  map<int,int> b
+
+  来得到对应关系
+}
+
+https://codeforces.com/contest/1598/problem/B  B. Groups  (1)
+
+https://ac.nowcoder.com/acm/contest/30825/B  抓球
+{
+  注意 除的地方就要变成逆元
+}
+
+https://ac.nowcoder.com/acm/contest/34442/A  盒饭盲盒(概率**)
+{
+  1.算的是概率, 当时想错了
+  2.题目是求: 三份都是荤菜的概率(三份都是蔬菜不算)
+
+  总共 n 种菜, a种荤菜。(正难则反)
+
+  ans = C(3,3) * (a/n)^3 / [ 1 - C(3,3) * ((n - a)/n)^3]
+
+}
+
+https://codeforces.com/contest/1598/problem/B  B. Groups (其实是枚举天数   ，然后进行数学分析) (1)
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+4. 一些数学知识
+
+https://ac.nowcoder.com/acm/contest/30825/J    大数乘法 (取模)
+{
+  1. 关于指数运算：
+
+  a^x * b^y = a^(x+y)
+
+  a^x^y = a^(x*y)
+
+  2. x^10 * x^10^2 ...  x^10^n;
+    可以每次循环去乘:(累乘)
+    for(int  i = 1;i <= n;i++){
+      x = pow(x,10);
+    }
+
+
+}
+
+https://ac.nowcoder.com/acm/contest/11226/D 梵
+{
+  1. 是一个开口向下的二次函数,答案就是x轴以上的和。
+
+  2. 1 + 2^2 + 3^2 + …… + n^2 = n * (n + 1) * (2n + 1)/6;
+
+  3. 就是关于取余的问题:
+    a. 除的地方变逆元
+    b. 有些操作运算可能会导致超出范围,需要进行取余。
+    c. (a - b) % mod => 
+      1. res = (a%mod - b%mod)%mod; //  因为(a%mod - b%mod)会变成负数导致答案变化
+      2. res = (res%mod + mod)%mod;
+
+      例:
+      (16 -14)%5 = 2
+}
+
+https://codeforces.com/contest/1690/problem/E  E. Price Maximization**
+{
+  1.先x/k 增加ans, 然后,将 他们的余数进行两两配对(使得两两配对的和 >= k 的数量最多)
+  2.利用双指针, 求出最佳的两两组合。
+
+}

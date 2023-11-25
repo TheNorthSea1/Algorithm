@@ -1,0 +1,58 @@
+L2-006 树的遍历 (25 分)    https://pintia.cn/problem-sets/994805046380707840/problems/994805069361299456
+{
+  中序必须要有.
+      
+  int build(int Lbeind,int Rbeind,int Lmid,int Rmid){
+    if(Lbeind>Rbeind) return -1;
+    int root=beind[Rbeind];
+    node[root].Data=beind[Rbeind];
+    int pos;
+    for(int i=Lmid;i<=Rmid;i++){    //重点通过后续遍历的根节点  
+      if(mid[i]==root){           //，在中序遍历中找到这个根节点所在的位置。
+        pos=i;
+        break;
+      }
+    }
+    int num=pos-Lmid;
+    node[root].L=build(Lbeind,Lbeind+num-1,Lmid,pos-1);
+    node[root].R=build(Lbeind+num,Rbeind-1,pos+1,Rmid);
+    return root;
+  } 
+
+
+
+}
+
+L2-011 玩转二叉树 (25 分)   https://pintia.cn/problem-sets/994805046380707840/problems/994805065406070784
+
+
+L2-035 完全二叉树的层序遍历 (25 分)    https://pintia.cn/problem-sets/994805046380707840/problems/1336215880692482058
+{
+  1. 注意完全二叉树的特点。
+  2.可以直接将每个节点的对应关系先设置好
+  for(int i = 1;i<=N;i++){
+		node[i].L = i*2 > N ? -1 : i*2;
+		node[i].R = i*2+1 > N ? -1 : i*2+1;
+	}
+
+  
+}
+
+L2-004 这是二叉搜索树吗？ (25 分)       https://pintia.cn/problem-sets/994805046380707840/problems/994805070971912192
+{
+  1. 如何对一组数据,构建搜索二叉树
+  2. 如何进行镜像反转
+  不断递归,先把子树反转,在自己反转
+
+  3.注意用指针建树时注意
+
+    Node *r = NULL;
+
+    r = new Node();  // 特别注意
+
+    r->data = val;
+    r->L = NULL;
+    r->R = NULL;
+}
+
+后缀表达式 https://pintia.cn/problem-sets/994805342720868352/problems/1478635599577522176

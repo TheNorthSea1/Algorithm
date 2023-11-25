@@ -1,0 +1,40 @@
+https://ac.nowcoder.com/acm/problem/21675     Rabbit的工作(1)-------(难)
+
+https://codeforces.com/problemset/problem/1535/C     Unstable String
+
+https://vjudge.ppsucxtt.cn/problem/HRBUST-1284   编辑距离 (经典问题)
+https://leetcode-cn.com/problems/edit-distance/solution/bian-ji-ju-chi-by-leetcode-solution/ ------（题解）
+
+
+https://ac.nowcoder.com/acm/problem/16664  合唱队形 （考察最长上升子序列）
+
+https://ac.nowcoder.com/acm/problem/21302   被3整除的子序列 (略带数学)
+{
+  
+}
+
+https://ac.nowcoder.com/acm/contest/11215/C   糟糕的打谱员（类似最长子序列，但想想其他办法）
+{
+
+}
+
+https://ac.nowcoder.com/acm/problem/24520    菜哭武读论文**
+
+https://ac.nowcoder.com/acm/problem/232359   生活在树上 (树)
+
+https://ac.nowcoder.com/acm/contest/30532/H   叠硬币 **(类似背包问题， 最小字典序的输出值得学习)
+
+https://ac.nowcoder.com/acm/problem/234864 造桥
+{
+  1.n^2的dp 加优化
+
+  2. 以字母进行dp
+}
+
+https://ac.nowcoder.com/acm/problem/237603  Brave tower
+
+
+https://ac.nowcoder.com/acm/contest/11251/B 小红的子序列
+{
+  
+}

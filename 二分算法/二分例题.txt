@@ -1,0 +1,45 @@
+https://codeforces.com/contest/1665/problem/C  C. Tree Infection (树,贪心,二分) **
+{
+
+  vt[] // 是个每个节点块的数量。
+ 
+
+  bool check(int time){
+    int remain = 0;
+    int j = time;
+    for(int i = 0;i<vt.size();i++,j--){ // 在j个时间内spreeding完.剩余的数量。---这个剩余的数量就是需要inject
+        remain += max(0,vt[i] - j);
+    }
+
+    return time - vt.size() >= remain;
+  }
+}
+
+http://218.108.89.20:18000/problem.php?cid=1470&pid=6 最小树高
+
+https://www.luogu.com.cn/problem/P2678   P2678  跳石头
+{
+  L = 0;//注意 L取0
+}
+
+
+https://www.luogu.com.cn/problem/P1024 一元三次方程求解
+
+https://ac.nowcoder.com/acm/problem/15446  wyh的物品 (01分数规划)
+{
+  当求 double类型的值时:
+
+  直接让二分算100次,精度就很高了。
+
+  int cnt = 0;
+  while(cnt <= 100){
+    double mid = (L+R)/2;
+    if(check(mid)){
+      L = mid;
+    }else{
+      R = mid;
+    }
+    cnt++;
+  }
+
+}

@@ -1,0 +1,9 @@
+https://ac.nowcoder.com/acm/problem/106060           Strategic game （1）
+
+https://ac.nowcoder.com/acm/problem/51178         没有上司的舞会（板子题）
+
+https://ac.nowcoder.com/acm/problem/24953          **Cell Phone Network
+
+https://codeforces.com/contest/1529/problem/C    C. Parsa's Humongous Tree （1）
+
+https://ac.nowcoder.com/acm/contest/11187/D	      月之暗面  ( 考察组合数学的知识, 还有逆元知识)

@@ -1,0 +1,203 @@
+1.https://codeforces.com/contest/1559/problem/A   Mocha and Math (1)
+
+2.https://ac.nowcoder.com/acm/problem/218870   *k小数查询 --（两种方法）  (2)
+
+3.https://codeforces.com/contest/1566/problem/D2   D2. Seating Arrangements (hard version)
+
+4.https://codeforces.com/contest/1573/problem/B   *B. Swaps (注意奇偶----巧妙利用数组---潜在的从小到大规律)--思路很妙
+
+5.https://codeforces.com/contest/1574/problem/B    B. Combinatorics Homework(观察。。)
+
+6.https://codeforces.com/contest/1553/problem/B    B. Reverse String    
+
+7.https://codeforces.com/contest/1556/problem/B  B. Take Your Places! (不难但要考虑清楚)
+
+8.https://codeforces.com/contest/1592/problem/B   B. Hemose Shopping
+
+9.https://codeforces.com/contest/1594/problem/C  C. Make Them Equal (数学的一点特性)
+
+10.https://codeforces.com/contest/1598/problem/B  B. Groups ( 其实是枚举天数   ，然后进行数学分析  )
+
+11.https://ac.nowcoder.com/acm/contest/2927/B   数字游戏（博弈思维题）
+
+12.https://atcoder.jp/contests/arc138/tasks/arc138_a  A - Larger Score(swap交换)
+
+13.https://codeforces.com/contest/1682/problem/C  C. LIS or Reverse LIS
+{
+  1.一开始我构造有问题, 把大的放中间（存在问题）
+  比如 1 4 4
+  1 4 4 答案为 1
+
+  2. 小的放中间进行构造
+
+  4 1 4 答案为 2
+  
+}
+
+14.https://ac.nowcoder.com/acm/problem/235055    V字钩爪  (思维)
+{
+  1.分组
+  2.注意V型钩爪,只能抓 i%k一样的珠宝。
+  3.经过分组,就变成每组取相邻
+  这里就要注意分奇数和偶数：{
+
+    1.偶数 可以全部取完
+
+    2.奇数 有一个不能取, 但是有些位置的珠宝不可能不取 如  1234567  (其中的 2, 4, 6 不取是实现不了的)
+
+    换个思想就是不取的那个珠宝,要把剩下的两部分变成偶数个。
+
+  }
+
+}
+
+
+15.https://ac.nowcoder.com/acm/contest/11223/E   对决 (思维分析)
+{
+  1.先确定能否成为冠军
+  2.有个特列情况( 最强为: 4n + 2   第二强的人: 2n + 1 )    
+  3.判断最多能打败几人
+  4.注意 二分 优化
+
+
+}
+
+16.https://codeforces.com/contest/1660/problem/D   Maximum Product Strikes Back
+{
+  1. 以零为分界点。
+  2. a.负数偶数直接更新答案
+     b.负数奇数，{
+       找到第一个负数:{
+         设 t 为负数的位置。
+         [L,t-1],
+         [t+1,R]
+
+       }
+       找到最后一个负数:{
+        设 t 为负数的位置。
+        [L,t-1],
+        [t+1,R]
+       }
+     }
+  3. 题目中的 a{-2<= a <=2}.
+  4.所以区间的大小之和只和 abs(2) 的数量有关
+}
+
+17.https://zoj.pintia.cn/problem-sets/91827364500/problems/91827370062   Marjar Cola
+{
+  题意: 一个商店 可以用 x 个 瓶身 或者 y 个 瓶盖 换一瓶可乐,
+        问： 你现在手上 有 a 个 瓶身 , b 个 瓶盖 能换多少瓶可乐。
+
+  1.infinite 的 情况。
+  
+  (1).  x == 1 || y == 1
+
+  *(2).  (x == 2&&y == 2) && (a>1 || b>1) 这个情况容易被忽略 
+
+  2.有限的情况, 暴力就ok
+}
+
+18.https://ac.nowcoder.com/acm/problem/14367   String of CCPC (字符串思维)
+{
+  可能一次操作变成CCPC的最短串有:
+
+  CCC , CCP, CPC
+
+  但这些最短串可能镶嵌在CCPC中, 那么接下来进行分析:
+
+  1.CCC
+  CCCPC -> 显然不行
+  CCPCCC ->可以
+
+  处理方法:  当遇到CCC时要判断是不是CCCPC 的类型。 s.subtr(i+1,4) == "CCPC"
+
+  2.CCP
+
+  CCPC  -> 不行
+
+  处理方法: 遇到CCPC 就把i往前一个单位
+
+  3.CPC
+
+  CCPC -> 不行
+
+  处理方法: 遇到CCPC 就把i往前两个单位
+
+  综上2,3 遇到CCPC 就把i往前两个单位
+
+}
+
+19.https://codeforces.com/contest/1674/problem/E E. Breaking the Wall(分类讨论)**
+{
+  根据每次射击影响三个格子, 我们可以分成三种情况: (这里的除都是向上取整)
+
+  1.找到最小的两个进行射击(他们的位置无所谓, 即使它的位置包含在2,3的情况。因为取min了)
+
+  ans = a[1]/2 + a[2]/2;
+
+  2.相邻格子:(*****)
+  sum = a[i] + a[i+1]
+  每次对sum - 3;
+  但有特殊情况考虑, 可能在对一块围墙射击时, 另一个已经被打破了.比如( [1 , 10 ]) 这组数据在打破10围墙之前,1 围墙已经打破
+
+  small = min(a[i],a[i+1])
+  big = max(a[i],a[i+1]);
+
+  if(big >= small * 2){
+    ans = big/2;
+  }else{
+    ans = sum / 3;
+  }
+
+
+
+  3.中间格一格
+  sum  = a[i] + a[i+2]
+  ans = sum/2 
+  这边就不需要像(第二种情况)考虑的那样,因为无论是否有一块围墙被攻破,每次都能减少2
+
+
+}
+
+20.https://codeforces.com/contest/1670/problem/B B. Dorms War
+{
+  直接求每一段的值, 然后取max
+}
+
+
+21.https://codeforces.com/contest/1678/problem/B2 B2. Tokitsukaze and Good 01-String (hard version)
+{
+  1.数组长度是偶数
+  2.把每一段变成由多个00或者11组成
+  3. 特殊情况010101... 处理
+}
+
+22.https://codeforces.com/contest/1678/problem/C C. Tokitsukaze and Strange Inequality(**)
+{
+  以 O(n^2) 时间内预处理出来pre数组
+  利用pre[][] 数组进行预处理.
+  pre[i][j] 表示: 在 1~i 之间, 有几个数小于等于j 
+}
+
+23.https://codeforces.com/contest/1675/problem/C   C. Detective Task
+{
+  先预处理 _1[]前缀和 , _0[] 前缀和 
+
+  枚举每个点,假设这个人是小偷,那么在他之前的人不能说0,他之后的人不能说1（因为小偷只有一个,而且其他人只能说真话）
+
+}
+
+24.https://codeforces.com/contest/1681/problem/C  C. Double Sort
+{
+  1. 利用选择排序, 或者冒泡排序记录交换过程
+  2. 先根据 a序列 进行排序,同时 b序列跟着排序。
+  3. 在对b进来一个检查, 如果发现b有两个 b[i] > b[j] ,只有当 a[i] == a[j] 才能进行交换,
+     否则是无法完成排序的。
+}
+
+25.https://codeforces.com/problemset/problem/1691/C  C. Sum of Substrings
+
+
+26.https://ac.nowcoder.com/acm/contest/11247/B 荒神在此
+
+http://218.108.89.20:18000/problem.php?cid=1470&pid=4  递增矩阵

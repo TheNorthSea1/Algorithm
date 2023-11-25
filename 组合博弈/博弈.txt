@@ -1,0 +1,8 @@
+https://ac.nowcoder.com/acm/contest/35627/A   A. Lines
+{
+  1.题意理解错误.
+  Consider the i th line and the j th line (i<j), if they have intersection, we call (i, j) a good pair.
+  这里说的good pair 指的是 line i 和 line j。
+
+  2. 根据斜率进行分组, 当且仅当 起始只有一组是 奇数 Alice才能获胜, 否则是Bob赢
+}

@@ -1,0 +1,3 @@
+https://codeforces.com/contest/1566/problem/D1       D1. Seating Arrangements (easy version)  ---（树状数组和离散化）
+
+https://codeforces.com/problemset/problem/1579/E2     E2. Array Optimization by Deque   ------(需要看出是一个树状数组)

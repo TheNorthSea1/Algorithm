@@ -1,0 +1,16 @@
+https://codeforces.com/gym/102770/problem/A   A. AD 2020(17 浙江省赛赛)
+{
+  题意: 给出 起始日期~结束日期(20000202 ~ 78820204) 问在这期间存在 202 的日期个数。
+
+  1.通过预处理, 将存在“202”的日期放入数组里.
+
+  2. 查询直接用二分进行查找即可。
+
+  int L = lower_bound(a,a+n,y1) - a;
+  int R = upper_bound(a,a+n,y2) - a;
+
+  ans = R - L;
+  
+}
+
+https://zoj.pintia.cn/problem-sets/91827364500/problems/91827370064  How Many Nines

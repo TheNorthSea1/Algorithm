@@ -1,0 +1,110 @@
+https://ac.nowcoder.com/acm/problem/219005      牛老板（略带数学分析+利用map记忆化）
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+https://codeforces.com/contest/1592/problem/C   C. Bakry and Partitioning 
+{
+	1.异或问题。
+	
+	
+	2.如何进行dfs搜索,取找到符合条件的连通块。
+	
+	3.****如何进行切割****
+	
+}
+
+https://pintia.cn/problem-sets/994805046380707840/problems/994805061769609216    L2-016 愿天下有情人都是失散多年的兄妹 (25 分)
+{
+	题目: 核心就是找到共同的祖先。
+	1.先一个人跑一遍dfs把路径都标记一下。
+	2.第二个人跑dfs遇到 标记 且 cnt <= 4那么就五代内, 不能通婚。
+
+
+}
+
+https://ac.nowcoder.com/acm/problem/225282     牛牛吃豆人 （贪心搜索----标记可行的路径）
+ 
+http://acm.hdu.edu.cn/showproblem.php?pid=3448              Bag Problem
+
+https://ac.nowcoder.com/acm/problem/16758     单词接龙
+
+
+-------------------------------------------------------------------------------------------------
+树相关题目
+
+https://www.acwing.com/problem/content/848/  树的重心(经典题)
+{
+	1. 我之前的思路是把每个节点的子树存下来。
+	2. 其实不用
+}
+
+
+1. 获取每个节点的深度
+
+https://codeforces.com/contest/1675/problem/F F. Vlad and Unfinished Business**
+{
+
+	注意 len值的求出.
+
+	len 表示: 回路遍历点集[a1,a2,a3,D]。
+
+	void dfs(int pos,int fa,int depth){
+		dep[pos] = depth;
+		
+		for(auto p : G[pos]){
+			if(p == fa) continue;
+			
+			dfs(p,pos,depth + 1);
+			
+			vis[pos] |= vis[p]; //  核心重点 
+			
+			if(vis[p]) len += 2;
+		}
+	}
+
+	ans = len - dep[D];
+}
+
+
+
+L2-043 龙龙送外卖  https://pintia.cn/problem-sets/994805046380707840/problems/1518582482059845632
+{
+	ans = sum - maxnlen
+}
+
+https://codeforces.com/contest/1675/problem/D   D. Vertical Paths(简单)
+
+
+https://www.luogu.com.cn/problem/P1162  填涂颜色
+
+
+https://ac.nowcoder.com/acm/contest/35627/H  H.Spring tree
+{
+	1.当时题意理解错误  the maximum of maximum depth of the tree
+
+	2. 利用dp思想 
+
+	3. 建树注意题目给的是边所以{
+		G[x].pb(y)
+		G[y].pb(x)
+	}
+	而不是单单的连一条边
+
+	4. 根据题意易得: 最重的东西肯定放在叶子节点处, 然后依次类推
+}
+
+https://www.acwing.com/problem/content/description/3558/ 二叉树
+{
+	最近公共祖先：
+
+	1.倍增 在线算法
+	
+	2.Tarjan离线算法
+
+	3.朴素算法
+
+	fa: 为a , b两点的最近公共祖先
+	
+	a, b两点的最短距离 =  depth[a] + depth[b] - 2 * depth[fa];
+}

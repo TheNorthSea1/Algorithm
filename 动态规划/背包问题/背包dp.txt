@@ -1,0 +1,47 @@
+https://ac.nowcoder.com/acm/problem/17871      CSL分苹果   
+
+https://codeforces.com/gym/103055/problem/J   浙江省赛（最短路 + 完全背包）
+
+https://ac.nowcoder.com/acm/problem/21314  （预处理的 01背包)*    (如何排序)
+{
+  随着时间的变化,价值也在变.
+
+  对于两道题t1,t2来说,有两种做题顺序,如下图的C12,C21,我们定义P1为t1的每分钟减小的分数,T1为做题需要的时间
+  两道题的初始总分数为sum(最大分数之和）
+  则
+  得分C12=sum-T1*P1-(T1+T2)*P2;
+  得分C21=sum-T2*P2-(T1+T2)*P1;
+
+}
+
+https://ac.nowcoder.com/acm/problem/16671   (01背包 变式)---5种状态(带有附件)
+{
+  1.该主件选/不选
+
+  2.其附件 不选/选1个/选2个
+}
+
+
+
+
+https://ac.nowcoder.com/acm/problem/207751  牛牛的旅游纪念品    **（值得思考）---还不是很清楚
+
+
+
+L3-001 凑零钱 (30 point(s)
+{
+  1.dfs剪枝
+  2.dp
+}
+
+
+7-2 拼题A打卡奖励 (25 分)（背包）
+{
+  
+}
+
+https://www.luogu.com.cn/problem/P2918   P2918 [USACO08NOV]Buying Hay S
+{
+
+}
+

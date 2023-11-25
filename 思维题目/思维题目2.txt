@@ -1,0 +1,10 @@
+1. https://codeforces.com/contest/1688/problem/C  C. Manipulating History
+{
+  1.题目看仔细 , 题目的开头地方说了, 初始串为1个字符
+}
+
+
+1. https://codeforces.com/contest/1703/problem/E E. Mirror Grid
+
+
+2. https://www.acwing.com/problem/content/3477/ 坠落的蚂蚁

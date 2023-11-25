@@ -1,0 +1,2 @@
+https://ac.nowcoder.com/acm/contest/11177/C   牛老板   {  大意：有6^i,  9^i ( i取任何整数)  , 给定一个数，求最小的纸币数量。}
+

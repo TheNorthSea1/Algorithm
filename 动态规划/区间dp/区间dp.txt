@@ -1,0 +1,25 @@
+https://ac.nowcoder.com/acm/problem/16645   矩阵取数游戏  -------（头尾取数）
+
+https://ac.nowcoder.com/acm/problem/14701   取数游戏2** (头尾取数, 思考)
+
+https://vjudge.ppsucxtt.cn/problem/HRBUST-1834 括号匹配
+
+https://ac.nowcoder.com/acm/problem/50493  石子合并（环形）
+
+https://vjudge.ppsucxtt.cn/problem/51Nod-1088  最长回文子串
+
+https://ac.nowcoder.com/acm/problem/13230    合并回文子串
+
+https://ac.nowcoder.com/acm/problem/50500    凸多边形的划分-------高精度(用记忆化搜索超时)
+
+https://www.luogu.com.cn/problem/P1650     田忌赛马（k断点分析请注意）
+
+https://ac.nowcoder.com/acm/contest/34442/D  两串糖果 ***
+{
+  dp[i] 1 ~ i 表示操作后的最大值 
+
+  c[maxn][maxn];// 从 c[i][j] 表示 i ~ j 翻转的值 
+
+  这个题目核心思想就是,利用区间dp的思想求 c[i][j] 的值
+
+}
