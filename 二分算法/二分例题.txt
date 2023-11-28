@@ -13,6 +13,9 @@ https://codeforces.com/contest/1665/problem/C  C. Tree Infection (树,贪心,二
 
     return time - vt.size() >= remain;
   }
+
+
+  错误思想纠正
 }
 
 http://218.108.89.20:18000/problem.php?cid=1470&pid=6 最小树高
