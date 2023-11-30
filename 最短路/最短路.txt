@@ -8,7 +8,7 @@ https://ac.nowcoder.com/acm/problem/14550     旅行
 
 双向最短路
 
-https://ac.nowcoder.com/acm/problem/50441          tokitsukaze and Event（前缀和的优化    ，枚举中转点）-----不优化就会超时的
+https://ac.nowcoder.com/acm/problem/50441          tokitsukaze and Event （前缀和的优化    ，枚举中转点）-----不优化就会超时的
 
 
 https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652364  L3-028 森森旅游
