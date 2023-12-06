@@ -179,7 +179,7 @@ https://codeforces.com/contest/1678/problem/C C. Tokitsukaze and Strange Inequal
   pre[i][j] 表示: 在 1~i 之间, 有几个数小于等于j 
 }
 
-https://codeforces.com/contest/1675/problem/C   C. Detective Task
+https://codeforces.com/contest/1675/problem/C   C. Detective Task (1)
 {
   先预处理 _1[]前缀和 , _0[] 前缀和 
 
