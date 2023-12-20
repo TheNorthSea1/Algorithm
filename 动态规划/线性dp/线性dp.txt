@@ -1,5 +1,7 @@
 https://ac.nowcoder.com/acm/problem/21675     Rabbit的工作(1)-------(难)
 
+https://ac.nowcoder.com/acm/problem/14526 购物
+
 https://codeforces.com/problemset/problem/1535/C     Unstable String
 
 https://vjudge.ppsucxtt.cn/problem/HRBUST-1284   编辑距离 (经典问题)

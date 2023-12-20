@@ -55,6 +55,8 @@ https://codeforces.com/contest/1692/problem/G  G. 2^Sort
   
 }
 
+https://blog.csdn.net/beihais/article/details/135116372?spm=1001.2014.3001.5502 三三得九(数学、前缀和) 
+
 
 https://codeforces.com/contest/1700/problem/C   C. Helping the Nature***
 {

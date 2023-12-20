@@ -45,7 +45,7 @@ https://ac.nowcoder.com/acm/problem/14709       分解因数
 
 https://pintia.cn/problem-sets/994805046380707840/problems/994805138600869888       连续因子（弄清因子的概念）
 
-https://codeforces.com/contest/1593/problem/B    Make it Divisible by 25   （对25数字的理解--------）
+https://codeforces.com/contest/1593/problem/B    Make it Divisible by 25   (对25数字的理解--------)
 
 https://codeforces.com/contest/1582/problem/A     *A. Luntik and Concerts 
 {
@@ -192,3 +192,5 @@ https://codeforces.com/contest/1690/problem/E  E. Price Maximization**
   2.利用双指针, 求出最佳的两两组合。
 
 }
+
+https://blog.csdn.net/beihais/article/details/135116372?spm=1001.2014.3001.5502 三三得九(数学、前缀和) 

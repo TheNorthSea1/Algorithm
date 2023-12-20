@@ -15,7 +15,7 @@ https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652364  
 {
   1. 有向图
   2. 反向建图的用处
-  3.利用 multiset 来维护最小值
+  3.利用 multiset 来维护最小值  *
 
 }
 
