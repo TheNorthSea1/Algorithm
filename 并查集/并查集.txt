@@ -57,6 +57,7 @@ https://codeforces.com/gym/103055/problem/G  Wall Game(18浙江省赛)
 
 }
 
+https://blog.csdn.net/beihais/article/details/135250033? 	Socks
 
 https://ac.nowcoder.com/acm/problem/237539  Triangles
 
